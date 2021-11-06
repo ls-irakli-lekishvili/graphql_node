@@ -34,7 +34,7 @@ const UserList = [
         name: "someone",
         username: "so",
         age: 25,
-        nationality: "Africa",
+        nationality: "AFRICA",
         friends: [
             {
                 id: 2,
@@ -61,4 +61,49 @@ const UserList = [
     },
 ];
 
-module.exports =  { UserList }
+const MovieList = [
+    {
+        id: '1',
+        name: 'the wok',
+        date: 2021,
+        inTheaters: true,
+    },
+    {
+        id: '2',
+        name: 'john xena',
+        date: 2020,
+        inTheaters: true
+    },
+    {
+        id: '3',
+        name: 'unknown',
+        date: 2023,
+        inTheaters: false
+    }
+]
+
+const MovieUserConnection = [
+    {
+        userId: '1',
+        movieId: ['1', '2']
+    },
+    {
+        userId: '2',
+        movieId: ['1']
+    },
+    {
+        userId: '3',
+        movieId: []
+    },
+    {
+        userId: '4',
+        movieId: []
+    },
+    {
+        userId: '5',
+        movieId: []
+    },
+
+]
+
+module.exports = {UserList, MovieList, MovieUserConnection}
